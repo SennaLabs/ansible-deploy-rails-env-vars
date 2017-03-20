@@ -1,0 +1,15 @@
+---
+# defaults file for ansible-deploy-rails-env-vars
+deploy_rails_env_vars:
+  etc_environment:
+    deploy: false
+    dest: /etc/environment
+  secrets_yml:
+    deploy: true
+  application_yml:
+    deploy: true
+  dot_rbenv_vars:
+     deploy: true
+     create_symlink: true
+  newrelic_yml:
+    deploy: true
